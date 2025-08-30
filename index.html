@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahesh Travels</title>
+  
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;}
+    body {background: #f9f9f9; color: #333;}
+
+    /* Navbar */
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {font-size: 1.5rem;}
+    nav a {color: white; margin-left: 20px; text-decoration: none; font-weight: bold;}
+    nav a:hover {color: #ffdd00;}
+
+    /* Hero Section */
+    .hero {
+      background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+    .hero h2 {font-size: 2.5rem; margin-bottom: 10px; text-shadow: 2px 2px 4px #000;}
+    .hero p {font-size: 1.2rem; margin-bottom: 20px;}
+    .hero button {
+      background: #ffdd00;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    .hero button:hover {background: #ffcc00;}
+
+    /* Sections */
+    section {padding: 50px 20px; text-align: center;}
+    section h2 {margin-bottom: 30px; font-size: 2rem; color: #0077b6;}
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .card img {width: 100%; border-radius: 10px;}
+    .card h3 {margin: 15px 0; color: #0077b6;}
+    .card p {font-size: 0.9rem;}
+
+    /* Footer */
+    footer {
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <h1>Mahesh Travels</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#cars">Cars</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h2>Explore the World with Mahesh Travels</h2>
+      <p>Your trusted travel partner for tours, trips & adventures</p>
+      <button>Book Now</button>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1502920514313-52581002a659" alt="Tour Packages">
+        <h3>Tour Packages</h3>
+        <p>Affordable domestic and international tour packages for individuals and families.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Car Rentals">
+        <h3>Car Rentals</h3>
+        <p>Luxury and budget-friendly cars for hire to make your journey smooth and comfortable.</p>
+      </div>
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- Cars Section -->
+  <section id="cars">
+    <h2>Our Cars</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPDE-_K6YHa-TxY-7CLax4U0MDMknXvNAhqw&s" alt="Innova Crysta">
+        <h3>Toyota Innova Crysta</h3>
+        <p>Spacious and comfortable for family trips with premium features.</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuwYjJYSLoRsvlmbdVGHYZrtzUH_camoynkg&s" alt="Swift Dzire">
+        <h3>Maruti Suzuki Dzire</h3>
+        <p>Perfect sedan for city rides and outstation trips with excellent mileage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@mahestravels.com | Phone: +91-8817284182</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mahesh Travels. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
